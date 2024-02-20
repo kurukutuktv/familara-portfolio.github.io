@@ -1,0 +1,127 @@
+/* Custom styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Use Open Sans as the default font */
+    background-color: #f8f9fa;
+    padding-top: 56px; /* Adjust padding top to accommodate the fixed navbar */
+    overflow: hidden;
+  }
+  header {
+    background-color: #f8f9fa; /* Set header background color same as body */
+  }
+  .navbar {
+    background-color: #f8f9fa; /* Set navbar background color same as body */
+    color: #333333;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #343a40; /* Adjust color of nav menus */
+  }
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: #000; /* Adjust hover/focus color of nav menus */
+  }
+  /* Set each section to occupy full screen height */
+  section {
+    height: 100vh;
+    padding-top: 50px; /* Add padding to the top of each section */
+    height: calc(100vh - 56px); /* Subtracting height of navbar */
+  height: calc(var(--vh, 1vh) * 100 - 56px); /* Fallback for browsers that don't support custom properties */
+    /* CSS */
+
+  }
+  /* Add smooth transition for the underline */
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #343a40; /* Adjust underline color */
+    transition: width 0.3s ease-in-out;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    width: 100%;
+  }
+  /* Add margin to the top of section headings */
+  h2 {
+    margin-top: 20px;
+  }
+  
+  .intro {
+    color: #2c3e50;
+  }
+  /* Add more custom styles as needed */
+/* Floating Arrow Button Styles */
+.floating-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: transparent;
+    color: #2c3e50;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2c3e50; /* Add border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .floating-arrow:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+  /* CSS */
+.arrow-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+/* CSS */
+.floating-arrow-container {
+    position: fixed;
+    bottom: 50px; /* Adjust as needed */
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+  }
+  
+  .view-projects-text {
+    margin-bottom: 75px; /* Adjust as needed */
+    font-size: 14px; /* Adjust as needed */
+    color: #000000; /* Adjust as needed */
+  }
+  .carousel-indicators {
+    bottom: 0px; /* Adjust the position as needed */
+  }
+  
+  .carousel-indicators li {
+    background-color: #fff; /* Color of the indicators */
+    border: 1px solid #ccc; /* Border of the indicators */
+    border-radius: 50%; /* Shape of the indicators */
+    width: 12px; /* Size of the indicators */
+    height: 12px;
+    margin: 0 5px; /* Spacing between indicators */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #333; /* Color of the active indicator */
+  }
+  
+  /* Ensure each project within the carousel occupies one-third of the carousel width */
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .project-img {
+
+    height: 100px; /* Adjust the height as needed */
+    object-fit: scale-down; /* Maintain aspect ratio and cover the entire container */
+  }  
+  /* Additional styles for arrow button in About section */
